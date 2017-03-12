@@ -1,0 +1,31 @@
+package javaDers;
+
+import java.util.Scanner;
+
+public class MantikIslemleri {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s= new Scanner(System.in);
+		System.out.print("kıyaslanmasını istediğiniz birinci sayiyi girin: ");
+		double y =s.nextInt();
+		System.out.print("kıyaslanmasını istediğiniz ikinci sayiyi girin: ");
+		double x =s.nextInt();
+		
+		if(x!=y){
+				System.out.println(y+"eşit değil"+x);
+				{	if(x>y){
+						System.out.println(x+"büyüktür"+y);
+					}
+					else if(x<y){
+						System.out.println(y+"büyüktür"+x);
+					}
+				}
+			}
+		
+		else if(x==y){
+			System.out.println(y+"eşittir"+x);
+				}
+			
+	}
+	}	
