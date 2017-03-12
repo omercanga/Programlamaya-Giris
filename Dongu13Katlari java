@@ -1,0 +1,20 @@
+package javaDers;
+
+public class Dongu13Katlari {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  	System.out.println("***************************************");
+	        System.out.println("100-0 arası 13 e bölünen sayılar");
+	        System.out.println("***************************************");
+	        for(int i =100;i>0;i--){
+	            if(i%13==0){
+	                 System.out.println( i );
+	            }
+	        }
+		
+
+	}
+
+}
