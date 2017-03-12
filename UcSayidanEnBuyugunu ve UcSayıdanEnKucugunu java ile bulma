@@ -1,0 +1,70 @@
+package javaDers;
+
+import java.util.Scanner;
+
+public class UcSayidanEnBuyugu {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner s=new Scanner(System.in);
+		System.out.print("Birinci Sayıyı(a) Giriniz: ");
+		int a=s.nextInt();
+		System.out.print("ikinci Sayıyı(b) Giriniz: ");
+		int b=s.nextInt();
+		System.out.print("üçüncü Sayıyı(c) Giriniz: ");
+		int c=s.nextInt();
+		
+		if(a==b &&b==c){
+			System.out.print("Üç sayı birbirine eşittir");
+		}
+		else if(a==b){ // a nın b ye eşit olması durumu
+			if(b>c){
+				System.out.print("En büyük Sayı :"+a+ " En küçük sayı :"+c+" dir");
+			}
+			else {
+				System.out.print("En büyük Sayı :"+c+ " En küçük sayı :"+a+" dir");
+			}
+				
+		}
+		else if(b==c){ // c nin b ye eşit olması durumu
+			if(a>c){
+				System.out.print("En büyük Sayı :"+a+ " En küçük sayı :"+c+" dir");
+			}
+			else {
+				System.out.print("En büyük Sayı :"+c+ " En küçük sayı :"+a+" dir");
+			}
+		
+		}
+		else if(a==c){ // c nin b ye eşit olması durumu
+			if(b>c){
+				System.out.print("En büyük Sayı :"+b+ " En küçük sayı :"+c+" dir");
+			}
+			else {
+				System.out.print("En büyük Sayı :"+c+ " En küçük sayı :"+b+" dir");
+			}
+		
+		}
+		
+		else if(a>b){
+				
+				if(b>c){
+					System.out.print("En büyük Sayı : "+a+" En küçük sayı :"+c+" dir");
+				}
+				else {
+					System.out.print("En büyük Sayı : "+a+" En küçük sayı :"+b+" dir");
+				}
+			}
+		else if(a<b){
+			if(c>b){
+				System.out.print("En büyük Sayı : "+c+" En küçük sayı :"+a+" dir");
+			}
+			else{
+				System.out.print("En büyük Sayı : "+c+" En küçük sayı :"+b+" dir");
+			}
+		}
+		
+		
+	}
+
+}
